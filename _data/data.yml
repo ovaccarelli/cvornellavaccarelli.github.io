@@ -104,7 +104,7 @@ skills:
     - name: HTML, CSS, Java
       percentage: 30
   backend:
-    - name: DFT(QuantumESPRESSO,FHI-aims)
+    - name: DFT (ab-initio)
       percentage: 80
     - name: Molecular Dynamics
       percentage: 50
@@ -131,7 +131,7 @@ education:
   - degree: MSc in Theoretical Physics
     name: University of Bari
     time: 2012 - 2014
-    gpa: 110/110 cum laude
+    gpa: 110/110
 
 awards:
   - name: European Patent

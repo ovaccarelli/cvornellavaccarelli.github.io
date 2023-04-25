@@ -86,9 +86,16 @@
     // Specify a size and min-width to make printing closer across browsers.
     // We don't set margin here because it breaks `size` in Chrome. We also
     // don't use `!important` on `size` as it breaks in Chrome.
+    //@page {
+    //  size: $print-page-size;
+    //}
+
+
     @page {
-      size: $print-page-size;
+      size: $print-page-size
     }
+
+
     body {
       min-width: $print-body-min-width !important;
     }
@@ -134,6 +141,20 @@
     .table .thead-dark th {
       color: inherit;
       border-color: $table-border-color;
+    }
+
+    .multi-container-1 {
+      width: 77%;
+      display: flex;
+      flex-flow: row wrap;
+      column-fill: auto
+    }
+
+    .multi-container-2 {
+      width: 23%;
+      display: flex;
+      flex-flow: row wrap;
+      column-fill: auto
     }
 
     // Bootstrap specific changes end
