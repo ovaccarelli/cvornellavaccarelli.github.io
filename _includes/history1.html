@@ -1,0 +1,117 @@
+
+{% assign history = site.data.data.history %}
+<section class="resume-section experience-section mb-5">
+
+{% assign skills = site.data.data.skills %}
+{% if skills.soft %}
+<h2 class="resume-section-title text-uppercase font-weight-bold pb-2 mb-3">Soft Skills</h2>
+<div class="resume-section-content">
+  <ul>
+    {% for skill in skills.soft %}
+        <li class="resume-section-content mb-0 customIndent">
+            <div class="resume-section-content">{{ skill.name }}</div>
+        </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+
+
+  <h2 class="resume-section-title text-uppercase font-weight-bold pb-2 mb-3">Professional Experience</h2>
+  <div class="resume-section-content">
+    <div class="resume-timeline position-relative">
+      <article class="resume-timeline-item position-relative pb-7">
+        <div class="resume-timeline-item-header mb-2">
+          <div class="d-flex flex-column flex-md-row">
+            <h3 class="resume-position-title font-weight-bold mb-1">Senior Research Scientist</h3>
+            <div class="resume-company-name ml-auto">University of Luxembourg</div>
+          </div><!--//row-->
+          <div class="resume-position-time">2018 - Present
+            <span style="float:right">Luxembourg - Luxembourg</span>
+          </div>
+        </div><!--//resume-timeline-item-header-->
+        <div class="resume-timeline-item-desc">
+          <h5 class="resume-timeline-item-desc-heading"> ProID European Project:</h5>
+          <p> Goal: construct a new nano device for amino-acid recognition and protein sequencing. <br>
+          My role: Combine classical, quantum and multi-physics 
+          finite element approaches to replicate, analyse and study the experiments in silico. </p>
+          <ul>
+            <li>Classical molecular dynamics simulations to investigate the traslocation of the protein.</li>
+            <li>First-principle methods to reproduce the global force-field at a quantum level of accuracy.</li>
+            <li>Raman Spectra analysis and basics of Machine Learning.</li>
+          </ul>
+          <ul class="list-inline">
+            <li class="list-inline-item"><h6><span class="badge badge-primary badge-pill">Quantum Espresso</span></h6></li>
+            <li class="list-inline-item"><h6><span class="badge badge-primary badge-pill">Phonopy</span></h6></li>
+            <li class="list-inline-item"><h6><span class="badge badge-primary badge-pill">GROMACS</span></h6></li>
+            <li class="list-inline-item"><h6><span class="badge badge-primary badge-pill">Bash</span></h6></li>
+          </ul>          
+          <h5 class="resume-timeline-item-desc-heading"> Computational and fundamental study of molecules and materials:</h5>
+          <p> The goal is to dominate theoretical laws in order to investigate the structures and physical properties of various materials, 
+          and discover new principles and phenomena at the multidisciplinary interfaces of microscopic and macroscopic models. </p>
+          <ul>
+            <li>Numerical simulations and data analysis for material science.</li>
+            <li>Development and optimization of analytical methods for atoms and small molecules.</li>
+            <li>Build a self-consistent model based on the quantum drude oscillator.</li>
+          </ul>
+          <ul class="list-inline">
+            <li class="list-inline-item"><h6><span class="badge badge-primary badge-pill">Phyton</span></h6></li>
+            <li class="list-inline-item"><h6><span class="badge badge-primary badge-pill">Wolfram Mathematica</span></h6></li>
+            <li class="list-inline-item"><h6><span class="badge badge-primary badge-pill">Matlab</span></h6></li>
+            <li class="list-inline-item"><h6><span class="badge badge-primary badge-pill">FHI-aims</span></h6></li>
+            <li class="list-inline-item"><h6><span class="badge badge-primary badge-pill">Bash</span></h6></li>
+          </ul>
+        </div><!--//resume-timeline-item-desc-->
+      </article><!--//resume-timeline-item-->
+
+      <article class="resume-timeline-item position-relative pb-7">
+        <div class="resume-timeline-item-header mb-2">
+          <div class="d-flex flex-column flex-md-row">
+            <h3 class="resume-position-title font-weight-bold mb-1">PhD in Computational and Theoretical Physics</h3>
+            <div class="resume-company-name ml-auto">Sorbonne University</div>
+          </div><!--//row-->
+          <div class="resume-position-time">2015 - 2018
+            <span style="float:right">Paris - France</span>
+          </div>
+        </div><!--//resume-timeline-item-header-->
+        <div class="resume-timeline-item-desc">
+          <p> Investigated the magnetic properties and exotic phenomena of a new frustrated two-leg spin ladder, Li2O(CuSO4)2, 
+            through a combined experimental and theoretical approaches. </p>
+          <ul>
+            <li>First-principle calculations (DFT and DFT+U).</li>
+            <li>Solved spin Hamiltonian, parametrized ab-initio, using Exact Diagonalization.</li>
+            <li>IR spectroscopy measurements and inelastic neutron scattering experiment.</li>
+          </ul>
+          <ul class="list-inline">
+            <li class="list-inline-item"><h6><span class="badge badge-primary badge-pill">Quantum Espresso</span></h6></li>
+            <li class="list-inline-item"><h6><span class="badge badge-primary badge-pill">Python</span></h6></li>
+            <li class="list-inline-item"><h6><span class="badge badge-primary badge-pill">Fortran</span></h6></li>
+          </ul>          
+        </div><!--//resume-timeline-item-desc-->
+      </article><!--//resume-timeline-item-->
+
+      <article class="resume-timeline-item position-relative pb-7">
+        <div class="resume-timeline-item-header mb-2">
+          <div class="d-flex flex-column flex-md-row">
+            <h3 class="resume-position-title font-weight-bold mb-1">Research Grant in Ghost Imaging and PlenOptic Camera.</h3>
+            <div class="resume-company-name ml-auto">University of Bari</div>
+          </div><!--//row-->
+          <div class="resume-position-time">2014 - 2015
+            <span style="float:right">Bari - Italy</span>
+          </div>
+        </div><!--//resume-timeline-item-header-->
+        <div class="resume-timeline-item-desc">
+          <p> Plenoptic imaging with thermal-light correlations.</p>
+          <ul class="list-inline">
+            <li class="list-inline-item"><h6><span class="badge badge-primary badge-pill">Wolfram Mathematica</span></h6></li>
+            <li class="list-inline-item"><h6><span class="badge badge-primary badge-pill">Python</span></h6></li>
+            <li class="list-inline-item"><h6><span class="badge badge-primary badge-pill">C/C++</span></h6></li>            
+          </ul>          
+        </div><!--//resume-timeline-item-desc-->
+      
+      </article><!--//resume-timeline-item-->
+      
+
+
+    </div><!--//resume-timeline-->
+  </div>
+</section><!--//experience-section-->

@@ -1,4 +1,4 @@
-title: John Doe - Awesome Engineer
+title: Ornella VACCARELLI - Sr. Research Scientist
 
 # Theme primary chooses
 cello: &cello "#434E5E"
@@ -8,9 +8,9 @@ scooter: &scooter "#328998"
 governor_bay: &governor_bay "#59578E"
 cosmic: &cosmic "#80425F"
 
-theme_color: *cello
-description: John Doe - Awesome Engineer
-repository: RobertDeRose/pillar-resume-template
+theme_color: *cosmic
+description: Ornella VACCARELLI - Sr. Research Scientist
+repository: ovaccarelli/cvornellavaccarelli
 
 sass:
   style: compact

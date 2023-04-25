@@ -1,7 +1,7 @@
 {% assign education = site.data.data.education %}
 {% if education %}
-<section class="resume-section education-section mb-5">
-  <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Education</h2>
+<section class="resume-section education-section mb-3">
+  <h2 class="resume-section-title text-uppercase font-weight-bold pb-2 mb-3">Education</h2>
   <div class="resume-section-content">
     <ul class="list-unstyled">
       {% for grad in education %}
@@ -9,7 +9,7 @@
         <div class="resume-degree font-weight-bold">{{ grad.degree }}</div>
         <div class="resume-degree-org">{{ grad.name }}</div>
         <div class="resume-degree-time">{{ grad.time }}
-          <span style="float:right">GPA: {{ grad.gpa }}</span>
+          <i style="float:right">{{ grad.gpa }}</i>
         </div>
       </li>
       {% endfor %}

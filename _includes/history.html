@@ -18,6 +18,11 @@
           </div>
         </div><!--//resume-timeline-item-header-->
         <div class="resume-timeline-item-desc">
+          {% if role.project %}
+          {% for project in role.project %}
+          <h5 class="resume-timeline-item-desc-heading font-weight-bold">{{ role.project }}:</h5>
+          {% endfor %}
+          {% endif %}
           {% assign ext = role.description | slice: -3, 3 | downcase %}
           {% if ext == ".md" %}
             {% capture description %}
@@ -32,10 +37,10 @@
           {{ role.achivements | markdownify}}
           {% endif %}
           {% if role.technologies %}
-          <h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies used:</h4>
+          <h5 class="resume-timeline-item-desc-heading font-weight-bold">Technologies used:</h5>
           <ul class="list-inline">
           {% for tech in role.technologies %}
-            <li class="list-inline-item"><span class="badge badge-primary badge-pill">{{ tech.name }}</span></li>
+            <li class="list-inline-item"><h6><span class="badge badge-primary badge-pill">{{ tech.name }}</span></h6></li>
           {% endfor %}
           </ul>
           {% endif %}
