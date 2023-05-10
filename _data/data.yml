@@ -101,10 +101,10 @@ skills:
       percentage: 70
     - name: MatLab, Fortran, C/C++
       percentage: 50
-    - name: HTML, CSS, Java
+    - name: HTML, CSS, Java, Django
       percentage: 30
   backend:
-    - name: DFT (ab-initio)
+    - name: DFT (QE, FHI-aims)
       percentage: 80
     - name: Molecular Dynamics
       percentage: 50
@@ -112,11 +112,11 @@ skills:
       percentage: 20
 
   other:
-    - name: Linux 
+    - name: Linux
     - name: macOS
-    - name: Windows 
-    - name: OpenOffice
+    - name: Microsoft
     - name: Adobe Illustrator
+    - name: LaTeX
 
   soft:
     - name: Analytical skill with advanced programming and computational proficiency.
@@ -125,13 +125,13 @@ skills:
     - name: Strong organizational and planning skills to complete and manage multiple projects simultaneously.
 
 education:
-  - degree: PhD in Material Science
+  - degree: PhD in Computer Science
     name: Sorbonne University
     time: 2015 - 2018
   - degree: MSc in Theoretical Physics
     name: University of Bari
     time: 2012 - 2014
-    gpa: 110/110
+    gpa: 110/110 cum laude
 
 awards:
   - name: European Patent
